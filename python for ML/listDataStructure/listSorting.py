@@ -14,4 +14,6 @@ print(sorted_list_des)
 
 # sort function
 
-
+num = [3, 2, 4, 1, 6, 5, 8, 7, 9, 0]
+num.sort()
+print(num)
