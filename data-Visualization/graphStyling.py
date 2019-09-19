@@ -51,3 +51,13 @@ b1 = [5, 2, 4, 2, 1, 4, 5, 2, 4, 3]
 plt.scatter(a1, b1, label='skitskat', color='green', s=25, marker='o')
 plt.legend()
 plt.title('scatter plot')
+
+
+# piechart
+
+slices_hours = [8, 2, 4, 6, 4]
+activities = ['college', 'eat', 'Sleep', 'code', 'other']
+colors = ['b', 'r', 'g', 'y', 'c']
+plt.pie(slices_hours, labels=activities,
+        colors=colors, startangle=90, autopct='%.1f%%')
+plt.show()
