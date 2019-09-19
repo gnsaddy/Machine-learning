@@ -38,6 +38,16 @@ plt.title('Bargraph example')
 # plt.grid(True, color='k')
 plt.show()
 
-# histogram
+# scatter plot
+# why to use scatter plot
+# used to compare two variables or three if we are using three dimensions
+# looking for a co-relation and groups we use scatter plot
+# a1 and b1 must be of same size
+# we are basically to find out how much two or three variables related to each other
 
 
+a1 = [1, 2, 3, 4, 5, 6, 7, 8, 4, 10]
+b1 = [5, 2, 4, 2, 1, 4, 5, 2, 4, 3]
+plt.scatter(a1, b1, label='skitskat', color='green', s=25, marker='o')
+plt.legend()
+plt.title('scatter plot')
