@@ -2,7 +2,9 @@
 # ggplot is a library which is used to style the grap using matplotlib
 
 from matplotlib import pyplot as plt
+from matplotlib import mlab as mlb
 from matplotlib import style
+import numpy as np
 
 
 style.available  # style svailable in ggplot
@@ -27,7 +29,23 @@ plt.legend()
 plt.grid(True, color='k')
 plt.show()
 
+# histogram bars refers to as bins
+# Histogram refers to a graphical representation, that displays data by way of bars to show the frequency of numerical data.
+# Quantitative data, Bars touch each other, hence there are no spaces between bars
+# Distribution of non-discrete variables
+
+x = [21, 22, 23, 4, 5, 6, 77, 8, 9, 10, 31,
+     32, 33, 34, 35, 36, 37, 18, 49, 50, 100]
+num_bins = 5
+n, bins, patches = plt.hist(x, num_bins, facecolor='blue', alpha=0.5)
+plt.show()
+
+
 # bargraph
+# Bar graph is a pictorial representation of data that uses bars to compare different categories of data.
+# Comparison of discrete variables
+# Categorical data, Bars do not touch each other, hence there are spaces between bars.
+
 
 plt.bar([1, 3, 5, 7, 9], [5, 2, 7, 8, 2], color='red', label="Bargraph 1")
 plt.bar([2, 4, 6, 8, 10], [8, 6, 2, 5, 6], color='green', label='Bargraph 2')

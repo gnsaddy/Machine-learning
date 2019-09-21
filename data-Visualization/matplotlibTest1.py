@@ -41,7 +41,7 @@ plt.show()
 plt.figure(figsize = (10, 7)) 
 x = data.PetalLengthCm 
 
-plt.hist(x, bins = 20, color = "green") 
+plt.hist(x, bins = 20,￼ color = "green") 
 plt.title("Petal Length in cm") 
 plt.xlabel("Petal_Length_cm") 
 plt.ylabel("Count") 
@@ -65,9 +65,15 @@ plt.show()
 new_data = data[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]] 
 print(new_data.head()) 
 
-plt.figure(figsize = (10, 7)) 
+plt.figure(figsize = (15, 10)) 
 new_data.boxplot() 
 
+sepal = data[["SepalWidthCm"]]
+print(sepal.head())
+plt.figure(figsize = (10, 7)) 
+sepal.boxplot() 
+sepal.describe()
+sepal.info()
 # other details
 dataset=data
 #findout unique classification/type of iris flower.
