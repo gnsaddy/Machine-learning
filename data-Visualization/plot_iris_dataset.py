@@ -19,10 +19,6 @@ information on this dataset.
 print(__doc__)
 
 
-# Code source: Gaël Varoquaux
-# Modified for documentation by Jaques Grobler
-# License: BSD 3 clause
-
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from sklearn import datasets
